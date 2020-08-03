@@ -5,3 +5,7 @@ function simpleArraySum(ar) {
     }
     return count;
 }
+
+function simpleArraySum(ar) {
+	return ar.reduce((a, b) => a + b);
+}
