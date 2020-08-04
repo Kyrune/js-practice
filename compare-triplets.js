@@ -1,0 +1,1 @@
+// Compare the elements in two triplets
