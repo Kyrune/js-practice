@@ -11,6 +11,9 @@
 
 // Given the initial value of grade for each of Sam's n students, write code to automate the rounding process.
 
+// The function is expected to return an INTEGER_ARRAY.
+// The function accepts INTEGER_ARRAY grades as parameter.
+
 function gradingStudens(grades) {
     return grades.map((n) => {
         let diff = 5 - (n % 5);
