@@ -1,4 +1,4 @@
-//  Convert time from an AM/PM format to a 24 hour format.
+//  Convert time from an AM/PM format to a 24 hour format (military time).
 
 function timeConversion(s) {
     let civTime = s.slice(-2);
