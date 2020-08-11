@@ -10,3 +10,7 @@
 // For example, grade = 84 will be rounded to 85 but grade = 29 will not be rounded because the rounding would result in a number that is less than 40.
 
 // Given the initial value of grade for each of Sam's n students, write code to automate the rounding process.
+
+function gradingStudens(grades) {
+    
+}
