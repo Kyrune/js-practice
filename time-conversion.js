@@ -8,7 +8,7 @@ function timeConversion(s) {
         // Catching edge-case of 12AM
         milTime[0] = "00";
     } else if (civTime === "PM") {
-        // Everything with PM can just be modular'd and added with 12
+        // Everything with PM can just be modulus'd and added with 12
         // The max will be 23
         milTime[0] = (milTime[0] % 12) + 12
     }
