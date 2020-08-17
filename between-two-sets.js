@@ -2,3 +2,7 @@
 
 // The elements of the first array are all factors of the integer being considered
 // The integer being considered is a factor of all elements of the second array
+
+function getTotalX(a, b) {
+    
+}
