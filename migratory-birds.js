@@ -5,3 +5,7 @@
 // kind of bird is spotted, its id number will be added to your array of sightings. 
 // You would like to be able to find out which type of bird is most common given a list of sightings. 
 // Your task is to print the type number of that bird and if two or more types of birds are equally common, choose the type with the smallest ID number.
+
+function migratoryBirds(arr) {
+    
+}
