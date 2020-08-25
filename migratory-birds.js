@@ -7,5 +7,27 @@
 // Your task is to print the type number of that bird and if two or more types of birds are equally common, choose the type with the smallest ID number.
 
 function migratoryBirds(arr) {
-    
+    arr.sort(function (a, b) {
+        return a - b
+    });
+
+    const numMap = {};
+    let maxNum = 0;
+    let maxChar = 0;
+
+    for (let num of arr) {
+        if ( numMap[num]) {
+            numMap[num]++;
+        } else {
+             numMap[num] = 1;
+        }
+    }
+
+    for (let num in numMap) {
+        if (numMap[num] > maxNum) {
+            maxNum = numMap[num];
+            maxChar = num;
+        }
+    }
+    return maxChar;
 }
