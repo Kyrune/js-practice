@@ -16,5 +16,19 @@ The function accepts following parameters:
 */
 
 function countingValleys(steps, path) {
+    let valleys = 0;
+    let altitude = 0;
 
+    for (let i = 0; i < steps; i++) {
+        // D
+        if (path[i] == 'D') {
+            altitude--;
+        } else { // U
+            if (altitude == -1) {
+                valleys++;
+            }
+            altitude++;
+        }
+    }
+    return valleys;
 }
