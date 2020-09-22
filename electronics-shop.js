@@ -4,5 +4,6 @@
 // buy both items, return -1.
 
 function getMoneySpent(keyboards, drives, b) {
-    
+    return keyboards.reduce((acc, curr) =>
+        Math.max(acc, ...drives.map(usb => usb + curr).filter(ku => b >= ku)), -1);
 }
