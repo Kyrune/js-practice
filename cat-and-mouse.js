@@ -4,5 +4,14 @@
 // will escape while they fight.
 
 function catAndMouse(x, y, z) {
+    const catA = Math.abs(x - z)
+    const catB = Math.abs(y - z)
 
+    if (catA === catB) {
+        return 'Mouse C'
+    } else if (catA < catB) {
+        return 'Cat A'
+    } else {
+        return 'Cat B'
+    }
 }
