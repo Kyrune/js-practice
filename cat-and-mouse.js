@@ -3,3 +3,6 @@
 // the cats travel at equal speed. If the cats arrive at the same time, the mouse will be allowed to move and it 
 // will escape while they fight.
 
+function catAndMouse(x, y, z) {
+
+}
