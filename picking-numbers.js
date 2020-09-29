@@ -7,3 +7,17 @@ function pickingNumbers(a) {
             0));
     }, 0);
 }
+
+function pickingNumbers(a) {
+    let maxcount = 0;
+    [...new Set(a)].forEach(x => {
+        maxcount = Math.max(maxcount,
+            a.reduce((c, v) => c += (v === x || v === x + 1), 0));
+    })
+    return maxcount;
+}
+
+// 1. Start with a unique list of values that appear in the array.
+// 2. For each value in turn, count how many members of the original array are either equal to that value or value + 1.
+// 3. Track the highest count in maxcount.
+// 4. Return the maxcount at the end.
