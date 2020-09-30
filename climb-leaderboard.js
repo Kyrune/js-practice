@@ -2,3 +2,7 @@
 
 // The player with the highest score is ranked number 1 on the leaderboard.
 // Players who have equal scores receive the same ranking number, and the next player(s) receive the immediately following ranking number.
+
+function climbingLeaderboard(scores, alice) {
+    
+}
