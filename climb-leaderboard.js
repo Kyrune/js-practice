@@ -23,6 +23,9 @@ function climbingLeaderboard(scores, alice) {
     return positions;
 }
 
+// This is O(n + m) because you iterate a and s (i and j in this case) just one time from start to end, 
+// since they are initialized in the outer for loop. The inner loop always continues where it stopped on the last iteration of the outer loop.
+
 function climbingLeaderboard(scores, alice) {
     const results = Array(alice.length);
     let rank = 1;
