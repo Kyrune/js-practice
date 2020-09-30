@@ -22,3 +22,16 @@ function climbingLeaderboard(scores, alice) {
     });
     return positions;
 }
+
+function climbingLeaderboard(scores, alice) {
+    const results = Array(alice.length);
+    let rank = 1;
+    for (let i = 0, j = alice.length - 1; j >= 0; j--) {
+        for (; scores[i] > alice[j]; i++) {
+            if (scores[i] > scores[i + 1] ||
+                i === scores.length - 1) rank++;
+        }
+        results[j] = rank;
+    }
+    return results;
+}
