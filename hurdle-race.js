@@ -3,5 +3,5 @@
 // able to jump all of the hurdles. If the character can already clear all of the hurdles, return 0.
 
 function hurdleRace(k, height) {
-    
+    return Math.max(0, Math.max(...height) - k);
 }
