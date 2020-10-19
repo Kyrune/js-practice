@@ -6,6 +6,7 @@ function hurdleRace(k, height) {
     return Math.max(0, Math.max(...height) - k);
 }
 
+// .apply & spread operator break if there are too many elements in the array (height).
 function hurdleRace(k, height) {
     const numOfPotions = height.reduce((acc, cur) => Math.max(acc, cur), height[0]) - k;
     return Math.max(0, numOfPotions);
