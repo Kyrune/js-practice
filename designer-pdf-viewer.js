@@ -4,5 +4,5 @@
 // There will also be a string. Using the letter heights given, determine the area of the rectangle highlight in mm^2 assuming all letters are 1mm wide.
 
 function designerPdfViewer(h, word) {
-    
+    return Math.max(...word.split('').map((e) => h[e.charCodeAt(0) - 97] * word.length));
 }
