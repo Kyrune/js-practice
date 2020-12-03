@@ -8,6 +8,7 @@
 // Calculate the hourglass sum for every hourglass in arr, then print the maximum hourglass sum. The array will always be 6 x 6.
 
 function hourglassSum(arr) {
+    // -63 is the lowest number value possible (if all number are -9).
     let max = -63;
 
     for (let i = 0; i < 4; i++) {
