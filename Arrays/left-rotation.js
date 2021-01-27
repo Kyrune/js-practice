@@ -5,9 +5,13 @@
 
 // Given an array a of n integers and a number, d , perform d left rotations on the array. Return the updated array to be printed as a single line of space-separated integers.
 
+// O(d) time complexity and constant space
 function rotLeft(a, d) {
     while (d--) {
         a.push(a.shift());
     }
     return a;
 }
+
+// The array "push" method pushes an element to the end of the array. The array "shift" method removes the first element of the array and returns it. 
+// You do that "d" times, as each loop decreases "d" by 1 until 0, which would cut the while-loop and return the "d" times shifted array.
