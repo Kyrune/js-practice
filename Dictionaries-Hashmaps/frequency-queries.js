@@ -1,5 +1,14 @@
 // Process the insert/delete queries and report if any integer is there with a particular frequency.
 
+// It receives params queries, which is a 2d array. Each element has an index 0 and index 1, where element[0] is 
+// an operation with 3 different cases, and element[1] is the data to be used.
+// When it receives [[1, 2], [1, 2], [2, 2] [1, 2], [3, 2]] as queries, it translates to:
+[1, 4] // add 4 => [4] 
+[1, 4] // add 4 => [4, 4]
+[2, 4] // remove 4 => [4]
+[1, 4] // add 4 [4, 4]
+[3, 2] // now index[1] serves as a frequency, does any number have the frequency of 2? 
+
 function freqQuery(queries) {
     let index = 0;
     let item;
