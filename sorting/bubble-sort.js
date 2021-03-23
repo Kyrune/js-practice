@@ -17,3 +17,7 @@ for (int i = 0; i < n; i++) {
 // 1. Array is sorted in numSwaps swaps., where  is the number of swaps that took place.
 // 2. First Element: firstElement, where  is the first element in the sorted array.
 // 3. Last Element: lastElement, where  is the last element in the sorted array.
+
+function countSwap(a) {
+    
+}
