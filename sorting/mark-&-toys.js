@@ -8,5 +8,17 @@
 // Note Each toy can be purchased only once.
 
 function maximumToys(prices, k) {
+    let counter = 0;
     
+    let sorted = [...prices].sort((a, b) => {
+        return a - b;
+    });
+
+    sorted.forEach(price => {
+        if (price <= k) {
+            k -= price;
+            counter++;
+        }
+    });
+    return counter;
 }
