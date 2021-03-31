@@ -7,3 +7,6 @@
 
 // Note Each toy can be purchased only once.
 
+function maximumToys(prices, k) {
+    
+}
