@@ -5,3 +5,7 @@
 
 // Given the number of trailing days d and a client's total daily expenditures for a period of  days, determine the number of 
 // times the client will receive a notification over all n days.
+
+function activityNotifications(expenditure, d) { 
+    
+}
