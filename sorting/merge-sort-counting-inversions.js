@@ -9,3 +9,6 @@
 // Given an array of n Player objects, write a comparator that sorts them in order of decreasing score. If 2 or more players have
 // the same score, sort those players alphabetically ascending by name.
 
+function countInversions(arr) {
+    
+}
