@@ -7,3 +7,6 @@
 // The student decides on an encryption scheme that involves two large strings. The encryption is dependent on the 
 // minimum number of character deletions required to make the two strings anagrams. Determine this number.
 
+function makeAnagram(a, b) {
+    
+}
