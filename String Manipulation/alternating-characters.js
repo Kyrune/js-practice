@@ -5,3 +5,7 @@
 // adjacent characters. To do this, you are allowed to delete zero or more characters in the string.
 
 // Your task is to find the minimum number of required deletions.
+
+function alternatingCharacters(s) {
+    
+}
