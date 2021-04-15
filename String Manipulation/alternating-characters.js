@@ -7,5 +7,6 @@
 // Your task is to find the minimum number of required deletions.
 
 function alternatingCharacters(s) {
-    
+    const multiples = s.match(/(.)+?(?!\1)/g);
+    return multiples.reduce((a, c) => a + c.length - 1, 0);
 }
