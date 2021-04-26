@@ -6,3 +6,7 @@
 // All characters except the middle one are the same, e.g. aadaa.
 // A special substring is any substring of a string which meets one of those criteria. Given a string, 
 // determine how many special substrings can be formed from it.
+
+function substrCount(n, s) {
+    
+}
