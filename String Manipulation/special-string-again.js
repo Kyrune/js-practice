@@ -7,6 +7,15 @@
 // A special substring is any substring of a string which meets one of those criteria. Given a string, 
 // determine how many special substrings can be formed from it.
 
+// substrCount has the following parameter(s):
+
+// n: the length of string s
+// string s: a string
+// Returns
+// - the number of special substrings
+
+
+
 function substrCount(n, s) {
     // Initially set the count to the string length to account for all single letter substrings.
     let count = n;
