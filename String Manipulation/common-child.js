@@ -8,3 +8,7 @@
 // string s1: a string
 // string s2: another string
 // Returns the length of the longest string which is a common child of the input strings
+
+function commonChild(s1, s2) {
+    
+}
