@@ -10,5 +10,10 @@
 // The minimum absolute difference found.
 
 function minimumAbsoluteDifference(arr) {
-    
+    let smallest = Infinity;
+    arr.sort(function(a, b) {
+        smallest = Math.min(smallest, Math.abs(a - b));
+        return a - b;
+    });
+    return smallest;
 }
