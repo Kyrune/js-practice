@@ -8,3 +8,7 @@
 
 // Returns
 // The minimum absolute difference found.
+
+function minimumAbsoluteDifference(arr) {
+    
+}
